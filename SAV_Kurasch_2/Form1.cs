@@ -49,7 +49,7 @@ namespace SAV_Kurasch_2
                         if (charCode != null && value != null && nominal != null)
                         {
                             // Преобразуем значение в decimal (с учетом разделителя дробной части)
-                            var decimalValue = decimal.Parse(value.Replace(",", "."));
+                            var decimalValue = decimal.Parse(value);
                             var decimalNominal = decimal.Parse(nominal);
                             currencies.Add(charCode, decimalValue / decimalNominal);
                         }
